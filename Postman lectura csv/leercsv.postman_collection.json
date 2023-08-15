@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "ce1de5c7-c1d6-4628-acf6-6e984d50ddc0",
+		"name": "leercsv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28999249"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "validacionfinal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mateo@gmail.com\",\r\n    \"dob\": \"1990-05-15\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/personas/validate?email=mateo@gmail.com&dob=1980-01-01&jobTitle=Phytotherapist",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"validate"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mateo@gmail.com"
+						},
+						{
+							"key": "dob",
+							"value": "1980-01-01"
+						},
+						{
+							"key": "jobTitle",
+							"value": "Phytotherapist"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validacion trabajo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/personas/validate-job?jobTitle=Building surveyor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"validate-job"
+					],
+					"query": [
+						{
+							"key": "jobTitle",
+							"value": "Building surveyor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validacion correo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/personas/validate-email?email=juan@example.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"validate-email"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "juan@example.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validacion fecha",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/personas/validate-dob?dob=1980-01-01",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"validate-dob"
+					],
+					"query": [
+						{
+							"key": "dob",
+							"value": "1980-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
